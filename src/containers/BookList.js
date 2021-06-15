@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Book from '../components/Book';
 
 function BookList({ books }) {
-  const bookList = books.map(book => (
+  const bookList = books.map((book) => (
     <Book
       book={book}
       key={book.id}
@@ -34,7 +34,7 @@ BookList.propTypes = {
   })).isRequired,
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   books: state.books,
 });
 

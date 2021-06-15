@@ -15,13 +15,13 @@ class BookForm extends Component {
     this.categoryOptions = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   }
 
-  handleChange = e => {
+  handleChange = (e) => {
     const { booksLength } = this.props;
     this.setState({ id: booksLength });
     this.setState({ [e.target.id]: e.target.value });
   }
 
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault();
     const { submitNewBook } = this.props;
     submitNewBook(this.state);
@@ -30,7 +30,7 @@ class BookForm extends Component {
 
   render() {
     const { defaultCategory } = this.state;
-    const options = this.categoryOptions.map(category => (
+    const options = this.categoryOptions.map((category) => (
       <option
         value={category}
         key={category}
@@ -64,12 +64,12 @@ class BookForm extends Component {
   }
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   booksLength: state.books.length,
 });
 
-const mapDispatchToProps = dispatch => ({
-  submitNewBook: newBook => {
+const mapDispatchToProps = (dispatch) => ({
+  submitNewBook: (newBook) => {
     dispatch(addBook(newBook));
   },
 });
