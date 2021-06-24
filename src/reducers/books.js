@@ -1,4 +1,4 @@
-import initialState from './initialState';
+import initialState from '../src/initialState';
 
 const bookReducer = (state = initialState, action) => {
   switch (action.type) {
