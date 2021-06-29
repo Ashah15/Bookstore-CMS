@@ -7,32 +7,43 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Tools Used
 
 - React.js
-- Webpack
 - Eslint
 - Stylelint
-- Jest
 - NPM
 - Babel
-- Heroku for deployment
 - Redux
 
 ## [Live Demo]()
 
-## How to install
+## Getting Started
 
-To run the bookstore locally, clone the repository and navigate to it's directory:
+How to install and run it locally
 
-```bash
-git@github.com:Phylis05/Bookstore-redux.git
-cd Bookstore-CMS
-git checkout initialize-react-repo
-npm install
-npm run start
-```
+- Run git clone https://github.com/Ashah15/Bookstore-CMS.git to get it in your local machine.
 
-Now go to [localhost:3000](http://localhost:8000) in your browser.
+- Navigate to the folder by running
+
+  cd Bookstore-CMS
+  
+- Install all of the dependencies by running
+  
+  npm install
+  
+- Bundle the files and start the development server
+
+  npm run start
+  
+- The game is now running on the browser
+
+ http://localhost:3000/
 
 ## Author
+
+👤 **Asha Abdullahi**
+
+-  [Github](https://github.com/Ashah15)
+-  [Twitter](https://twitter.com/AshaAbdullahi13)
+-  [Linkedin](https://www.linkedin.com/in/ashaabdullahi/)
 
 ## Show your support
 
