@@ -5,8 +5,8 @@ import Book from '../components/Book';
 import { removeBook } from '../actions/index';
 
 function BookList({ books, deleteBook }) {
-  const handleRemoveBook = book => deleteBook(book);
-  const bookList = books.map(book => (
+  const handleRemoveBook = (book) => deleteBook(book);
+  const bookList = books.map((book) => (
     <Book
       deleteBook={handleRemoveBook}
       book={book}
@@ -40,12 +40,12 @@ BookList.propTypes = {
   deleteBook: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   books: state.books,
 });
 
-const mapDispatchToProps = dispatch => ({
-  deleteBook: book => {
+const mapDispatchToProps = (dispatch) => ({
+  deleteBook: (book) => {
     dispatch(removeBook(book));
   },
 });
