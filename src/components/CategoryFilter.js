@@ -4,7 +4,7 @@ import categoryOptions from '../containers/constants';
 
 function CategoryFilter({ category, handleCategory }) {
   const newCategoryOptions = (['All']).concat(categoryOptions);
-  const options = newCategoryOptions.map(index => (
+  const options = newCategoryOptions.map((index) => (
     <option
       value={index}
       key={index}
