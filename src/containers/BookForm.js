@@ -15,13 +15,13 @@ class BookForm extends Component {
     };
   }
 
-  handleChange = e => {
+  handleChange = (e) => {
     const { booksLength } = this.props;
     this.setState({ id: booksLength });
     this.setState({ [e.target.id]: e.target.value });
   }
 
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault();
     const { submitNewBook } = this.props;
     submitNewBook(this.state);
@@ -37,7 +37,7 @@ class BookForm extends Component {
 
   render() {
     const { defaultCategory } = this.state;
-    const options = categoryOptions.map(category => (
+    const options = categoryOptions.map((category) => (
       <option
         value={category}
         key={category}
@@ -67,12 +67,12 @@ class BookForm extends Component {
   }
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   booksLength: state.books.length,
 });
 
-const mapDispatchToProps = dispatch => ({
-  submitNewBook: newBook => {
+const mapDispatchToProps = (dispatch) => ({
+  submitNewBook: (newBook) => {
     dispatch(addBook(newBook));
   },
 });
