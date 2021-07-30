@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addBook } from '../actions/index';
+import categoryOptions from './constants';
+import './bookForm.css';
 
 class BookForm extends Component {
   constructor(props) {
@@ -11,24 +13,23 @@ class BookForm extends Component {
       title: '',
       category: 'Action',
     };
-
-    this.categoryOptions = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   }
 
-  handleChange = (e) => {
+  handleChange = e => {
     const { booksLength } = this.props;
     this.setState({ id: booksLength });
     this.setState({ [e.target.id]: e.target.value });
   }
 
-  handleSubmit = (e) => {
+  handleSubmit = e => {
     e.preventDefault();
     const { submitNewBook } = this.props;
     submitNewBook(this.state);
     e.target.reset();
 
+    const { booksLength } = this.props;
     this.setState({
-      id: null,
+      id: booksLength + 1,
       title: '',
       category: 'Action',
     });
@@ -36,7 +37,7 @@ class BookForm extends Component {
 
   render() {
     const { defaultCategory } = this.state;
-    const options = this.categoryOptions.map((category) => (
+    const options = categoryOptions.map(category => (
       <option
         value={category}
         key={category}
@@ -46,36 +47,32 @@ class BookForm extends Component {
     ));
     return (
       <form onSubmit={this.handleSubmit}>
-        <h5>Create Book</h5>
+        <h5 className="add-book">Add New Book</h5>
 
-        <div className="input-field">
-          <label htmlFor="title">
-            Title
-            <input required type="text" id="title" onChange={this.handleChange} />
-          </label>
-        </div>
+        <div className="form-body">
+          <div className="input-field">
+            <input required type="text" id="title" onChange={this.handleChange} placeholder="Book Title" />
+          </div>
 
-        <div className="input-field">
-          <label htmlFor="category">
-            Category
+          <div className="input-field">
             <select id="category" value={defaultCategory} onChange={this.handleChange}>
               {options}
             </select>
-          </label>
-        </div>
+          </div>
 
-        <button type="submit">Create Book</button>
+          <button type="submit">Create Book</button>
+        </div>
       </form>
     );
   }
 }
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   booksLength: state.books.length,
 });
 
-const mapDispatchToProps = (dispatch) => ({
-  submitNewBook: (newBook) => {
+const mapDispatchToProps = dispatch => ({
+  submitNewBook: newBook => {
     dispatch(addBook(newBook));
   },
 });
