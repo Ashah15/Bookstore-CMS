@@ -1,12 +1,23 @@
-# Getting Started with Create React App
+# Bookstore-CMS
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Screenshot of the app
 
 In the project directory, you can run:
 
-### `yarn start`
+# How to use
+
+## Installation
+Follow the following steps to install and run the app locally in your local machine
+
+```bash
+git@github.com:Phylis05/Bookstore-redux.git
+cd Bookstore-redux
+git checkout initialize-react-repo
+npm install
+npm run start
+```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
