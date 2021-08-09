@@ -34,3 +34,16 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Authors
 
+👤 **Asha Abdullahi**
+
+-  [Github](https://github.com/Ashah15)
+-  [Twitter](https://twitter.com/AshaAbdullahi13)
+-  [Linkedin](https://www.linkedin.com/in/ashaabdullahi/)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
