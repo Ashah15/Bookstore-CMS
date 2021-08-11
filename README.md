@@ -1,25 +1,10 @@
-# Bookstore-CMS
+# BookStore App
+
+It is a front-end application that helps organizing and managing a bookstore record. It is fast, dynamic and responsive to actions applied by the book keepers.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Screenshot of the app
-
-In the project directory, you can run:
-
-# How to use
-
-## Installation
-Follow the following steps to install and run the app locally in your local machine
-
-```bash
-https://github.com/Ashah15/Bookstore-CMS.git
-cd Bookstore-CMS
-git checkout initialize-react-repo
-npm install
-npm run start
-```
-
-## Built With
+## Tools Used
 
 - React.js
 - Webpack
@@ -30,9 +15,31 @@ npm run start
 - Babel
 - Redux
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## [Live Demo]()
 
-## Authors
+## Getting Started
+
+How to install and run it locally
+
+- Run git clone https://github.com/Ashah15/Bookstore-CMS.git to get it in your local machine.
+
+- Navigate to the folder by running
+
+  cd Bookstore-CMS
+  
+- Install all of the dependencies by running
+  
+  npm install
+  
+- Bundle the files and start the development server
+
+  npm run start
+  
+- The app is now running on the browser
+
+ http://localhost:3000/
+
+## Author
 
 👤 **Asha Abdullahi**
 
@@ -40,10 +47,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 -  [Twitter](https://twitter.com/AshaAbdullahi13)
 -  [Linkedin](https://www.linkedin.com/in/ashaabdullahi/)
 
-## 🤝 Contributing
+## Show your support
 
-Contributions, issues and feature requests are welcome!
+Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
