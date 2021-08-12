@@ -19,7 +19,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Redux
 
 
-## [Live Demo]()
+## [Live Demo](https://ecstatic-snyder-678fef.netlify.app/)
 
 ## Getting Started
 
