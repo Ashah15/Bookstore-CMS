@@ -1,18 +1,12 @@
 tbody {
   background-color: #fafafa;
-  display: flex;
-  flex-direction: column;
-  font-family: RobotoSlab, sans-serif;
 }
 
 .book-row {
-  display: flex;
-  flex-direction: column;
   width: 33%;
 }
 
 .display-row {
-  display: flex;
   width: 1200px;
   height: 170px;
   border-radius: 4px;
@@ -22,7 +16,6 @@ tbody {
 }
 
 .progress {
-  display: flex;
   justify-content: space-around;
   width: 100%;
 }
@@ -51,14 +44,16 @@ svg circle:nth-child(2) {
   stroke: #0290ff;
 }
 
-.columns-display {
+tbody, .columns-display, .book-row, .display-row, .progress, .progress-content {
   display: flex;
 }
 
 .progress-content {
-  display: flex;
-  flex-direction: column;
   margin-top: 2em;
+}
+
+tbody, .progress-content, .book-row {
+  flex-direction: column;
 }
 
 .book-category {
@@ -68,19 +63,19 @@ svg circle:nth-child(2) {
   font-family: Montserrat, sans-serif;
   font-size: 14px;
   font-weight: bold;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.book-category, .book-title, .delete-button button, .percent, .completed {
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  letter-spacing: normal;
-  color: #121212;
 }
 
 .book-title {
   font-size: 22px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.2px;
   color: #121212;
   text-align: left;
@@ -98,12 +93,8 @@ a {
 
 .delete-button button {
   width: auto;
-  font-family: RobotoSlab, sans-serif;
   font-size: 14px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
   color: #0290ff;
   border: none;
@@ -116,9 +107,6 @@ a {
 .percent {
   font-size: 32px;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
   color: #121212;
 }
@@ -129,14 +117,14 @@ a {
   opacity: 0.5;
   font-family: Montserrat, sans-serif;
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
 }
 
 .update-btn {
   background-color: #0290ff;
   color: #fafafa;
+}
+
+tbody, .delete-button button {
+  font-family: RobotoSlab, sans-serif;
 }
