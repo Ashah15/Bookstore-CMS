@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import PropTypes from 'prop-types';
 import './book.css';
@@ -9,9 +10,9 @@ function Book({ book, handleRemoveBook }) {
         <div className="book-category">{ book.category }</div>
         <div className="book-title">{ book.title }</div>
         <div className="delete-button">
-          {/* <a href="#">Comments</a> */}
+          <a href="#">Comments</a>
           <button type="button" onClick={() => handleRemoveBook(book)}>Remove Book</button>
-          {/* <a href="#">Edit</a> */}
+          <a href="#">Edit</a>
         </div>
       </div>
       <div className="progress">

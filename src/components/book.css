@@ -44,7 +44,12 @@ svg circle:nth-child(2) {
   stroke: #0290ff;
 }
 
-tbody, .columns-display, .book-row, .display-row, .progress, .progress-content {
+tbody,
+.columns-display,
+.book-row,
+.display-row,
+.progress,
+.progress-content {
   display: flex;
 }
 
@@ -52,7 +57,9 @@ tbody, .columns-display, .book-row, .display-row, .progress, .progress-content {
   margin-top: 2em;
 }
 
-tbody, .progress-content, .book-row {
+tbody,
+.progress-content,
+.book-row {
   flex-direction: column;
 }
 
@@ -67,7 +74,11 @@ tbody, .progress-content, .book-row {
   color: #121212;
 }
 
-.book-category, .book-title, .delete-button button, .percent, .completed {
+.book-category,
+.book-title,
+.delete-button button,
+.percent,
+.completed {
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -125,6 +136,7 @@ a {
   color: #fafafa;
 }
 
-tbody, .delete-button button {
+tbody,
+.delete-button button {
   font-family: RobotoSlab, sans-serif;
 }

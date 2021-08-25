@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import categoryOptions from '../containers/constants';
+import './categoryFilter.css';
 
 function CategoryFilter({ category, handleCategory }) {
   const newCategoryOptions = (['All']).concat(categoryOptions);
@@ -15,7 +16,7 @@ function CategoryFilter({ category, handleCategory }) {
 
   return (
     <nav>
-      <h1>DISCOVERY-WORD BOOKSTORE</h1>
+      <h1>DISCOVER-WORLD BOOKSTORE</h1>
       <h3>BOOKS</h3>
       <div className="input-field">
         <label htmlFor="category">
