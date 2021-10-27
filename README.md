@@ -4,16 +4,23 @@ It is a front-end application that helps organizing and managing a bookstore rec
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## App Screenshot
+![book](https://user-images.githubusercontent.com/25789605/130869507-089514f2-c186-46bb-a8a7-e7d41fb28820.png)
+
 ## Tools Used
 
 - React.js
+- Webpack
 - Eslint
 - Stylelint
+- Jest
 - NPM
 - Babel
 - Redux
 
-## [Live Demo]()
+
+## [Live Demo](https://ecstatic-snyder-678fef.netlify.app/)
 
 ## Getting Started
 
@@ -33,7 +40,7 @@ How to install and run it locally
 
   npm run start
   
-- The game is now running on the browser
+- The app is now running on the browser
 
  http://localhost:3000/
 
@@ -52,5 +59,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](https://opensource.org/licenses/MIT) licensed.
-
-
